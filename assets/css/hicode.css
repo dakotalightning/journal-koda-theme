@@ -1,0 +1,160 @@
+/*********************************************************************************/
+/* Hicode Basic                                                                  */
+/*********************************************************************************/
+
+.hicode {}
+.hicode .title, .hicode .text {
+  display: inline;
+  font-family: monospace;
+}
+.hicode .title:after {
+  content: ': ';
+}
+.hicode .line-comment {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  border-bottom-left-radius: 0.25em;
+  padding: .5em 1.5em .75em 1.5em;
+  line-height: 1.5em;
+  font-size: 0.8em;
+}
+.hicode .block-comment {
+  padding: 1em 1.5em 1em 1.5em;
+  line-height: 1.5em;
+}
+
+/*********************************************************************************/
+/* Hicode                                                                        */
+/*********************************************************************************/
+
+.hicode-wrapper {
+  position: relative;
+  overflow-y: hidden;
+  background: #3C474B;
+  color: #acb7bb;
+  border-radius: 0.25em;
+  margin: 0 auto;
+}
+.hicode-wrapper header {
+  width: 100%;
+  padding: 1.3em 1.5em 0.2em 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  margin-bottom: 0;
+}
+.hicode-wrapper footer {
+  width: 100%;
+  line-height: 1em;
+  font-size: 0.6em;
+  text-align: center;
+  margin-bottom: 0;
+}
+.hicode-wrapper footer a:hover {
+  color: #8f76bd;
+}
+.hicode-wrapper footer ul.menu li {
+  border-left-color: #acb7bb;
+}
+.hicode-wrapper header strong {
+  color: #fff;
+}
+.hicode-wrapper footer strong {
+  color: #fff;
+}
+pre, code {
+  background: #2C373B;
+  color: #acb7bb;
+  font-family: monospace;
+  font-size: 0.8em;
+  line-height: 32px;
+  border-radius: 0.25em;
+  text-align: left;
+}
+pre {
+  margin: 0 auto 2em auto;
+  padding: 0.5em 0.75em 0.5em 0.75em;
+}
+code {
+  display: inline-block;
+  padding: 0 0.75em 0 0.75em;
+  margin: 0 0.5em 0 0.5em;
+}
+.hicode {
+  position: relative;
+  text-align: left;
+  background: #2C373B;
+  color: #acb7bb;
+  border-radius: 0.25em;
+  margin: 1em auto 1em auto;
+  padding: 0.5em 0 0.5em 0;
+  box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.hicode .title {
+  font-weight: 600;
+}
+.hicode .line {
+  position: relative;
+  box-shadow: inset 0px -1px 0px 0px rgba(255, 255, 255, 0.1);
+  height: 2em;
+  line-height: 2em;
+  font-family: monospace;
+  font-size: 0.8em;
+  overflow-x: hidden;
+  white-space: nowrap;
+  padding: 0 1em 0 1em;
+}
+.hicode .line.notification {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.hicode .line.notification:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.hicode .line.active {
+  background: #5cbb65;
+  background: rgba(140, 200, 220, 0.35);
+  box-shadow: inset 0px 2px 0px 0px #5cbb65, inset 0px -2px 0px 0px #5cbb65;
+  cursor: pointer;
+}
+.hicode .line.last {
+  box-shadow: none;
+}
+.hicode .block {}
+.hicode .block.active {
+  background: rgba(135, 165, 135, 0.175);
+  box-shadow: inset 0px -3px 0px 0px #8f76bd, inset 0px 3px 0px 0px #8f76bd;
+}
+.hicode .line-comment {
+  position: absolute;
+  color: #fff;
+  font-size: 0.7em;
+  z-index: 1;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -o-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background: #5cbb65;
+  box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.18);
+}
+.hicode .block-comment {
+  color: #fff;
+  font-size: 0.9em;
+  z-index: 1;
+  font-weight: 400;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -o-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background: #8f76bd;
+  box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.18);
+}
