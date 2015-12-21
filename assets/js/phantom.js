@@ -30,7 +30,13 @@ $(function () {
     });
 
     // Execute Highlight.js
-    hljs.initHighlightingOnLoad();
+    // hljs.initHighlightingOnLoad();
+
+    $('pre').hicode({
+        alwaysShowBlocks: true,
+        blockStyles: 2,
+        persistence: 0
+    });
 
     // Social sharing links
     $('#twitter').click(function () {

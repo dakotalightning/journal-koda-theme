@@ -13,7 +13,7 @@
 .hicode .line-comment {
   position: absolute;
   right: 0;
-  width: 40%;
+  width: 60%;
   border-bottom-left-radius: 0.25em;
   padding: .5em 1.5em .75em 1.5em;
   line-height: 1.5em;
@@ -66,7 +66,7 @@ pre, code {
   background: #2C373B;
   color: #acb7bb;
   font-family: monospace;
-  font-size: 0.8em;
+  font-size: 14px;
   line-height: 32px;
   border-radius: 0.25em;
   text-align: left;
@@ -99,7 +99,7 @@ code {
   height: 2em;
   line-height: 2em;
   font-family: monospace;
-  font-size: 0.8em;
+  font-size: 14px;
   overflow-x: hidden;
   white-space: nowrap;
   padding: 0 1em 0 1em;
@@ -134,7 +134,7 @@ code {
 .hicode .line-comment {
   position: absolute;
   color: #fff;
-  font-size: 0.7em;
+  font-size: 14px;
   z-index: 1;
   font-weight: 400;
   -moz-hyphens: auto;
@@ -147,7 +147,7 @@ code {
 }
 .hicode .block-comment {
   color: #fff;
-  font-size: 0.9em;
+  font-size: 14px;
   z-index: 1;
   font-weight: 400;
   -moz-hyphens: auto;
